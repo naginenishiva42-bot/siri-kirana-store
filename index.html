@@ -1,284 +1,377 @@
-
-
-
-1000796766.jpg
-1000796765.jpg
-
-Absolutely, Shiva! 😊 Let's make SIRI KIRANA & GENERAL STORE look like a professional, attractive online grocery store—not just a basic website.
-
-Your current website already has a good foundation. We can improve its design and shopping experience.
-
-🌟 My Design Ideas for Your Website
-1️⃣ Attractive Homepage
-Your original store logo
-
-Beautiful grocery background or product images
-
-Eye-catching headline:
-"Your Daily Essentials, Just a Click Away!"
-
-Shop Now button
-
-Special offers section
-
-2️⃣ Professional Product Cards 🛒
-Display products like this:
-
-🛍️ Rice 5kg
-
-₹420
-
-Product image
-
-Add to Cart button
-
-Quantity selection
-
-Make it look similar to popular grocery shopping websites.
-
-3️⃣ Product Categories
-Create attractive category sections:
-
-Category	Products
-🌾 Groceries	Rice, Dal, Flour
-🥤 Beverages	Cool Drinks, Juices
-🍪 Snacks	Biscuits, Chips
-🧴 Personal Care	Soaps, Shampoo
-🏠 Household	Cleaning Products
-4️⃣ Special Offers Section 🎁
-Example:
-
-🔥 TODAY'S SPECIAL
-
-Shop Your Daily Essentials
-
-Quality products at affordable prices.
-
-We can add promotional banners for your store.
-
-5️⃣ Better Shopping Experience
-Search products
-
-Filter by category
-
-Add/remove cart items
-
-WhatsApp ordering
-
-Home delivery option
-
-Customer name and address
-
-🎨 My Recommended Design
-Theme: Modern Grocery Store
-Colors: Dark Green + Gold + Cream
-Style: Clean, premium, mobile-friendly
-
-Your existing green and gold branding can be retained while improving the overall layout.
-
-✅ Let's Start
-I can create a complete, improved index.html file for your website.
-
-It will include:
-
-Modern homepage
-
-Your logo
-
-Product images
-
-Attractive product cards
-
-Shopping cart
-
-WhatsApp ordering
-
-Mobile-friendly design
-
-One thing I need from you:
-
-📌 Open your GitHub repository → index.html → copy the complete code and paste it here.
-
-Or tell me:
-
-Do you want to keep your existing products and prices, or should I create a more attractive design with sample grocery products first?
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siri Kirana & General Store</title>
-<meta name="description" content="Shop everyday grocery and household essentials from Siri Kirana & General Store in Balaji Nagar, Hyderabad.">
-<style>
-:root{--green:#146b45;--dark:#0b3d2b;--gold:#d5a33a;--cream:#fffaf0}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f7f8f5;color:#183126}
-header{background:linear-gradient(135deg,var(--dark),var(--green));color:white;padding:22px 16px;position:sticky;top:0;z-index:5}
-nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:21px;font-weight:800;display:flex;align-items:center;gap:10px}.logo{width:58px;height:58px;object-fit:contain;border-radius:10px;background:#fff;padding:3px}.brand span{color:#ffd875}
-.cart{background:var(--gold);color:#172d20;border:0;border-radius:24px;padding:11px 15px;font-weight:bold}
-.hero{background:var(--cream);padding:48px 18px;text-align:center}.hero h1{font-size:clamp(30px,7vw,56px);margin:10px 0;color:var(--dark)}.hero p{font-size:17px}.btn{display:inline-block;background:var(--green);color:white;padding:13px 20px;border-radius:25px;text-decoration:none;border:0;font-weight:bold;cursor:pointer}
-.wrap{max-width:1100px;margin:auto;padding:25px 16px}.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}input,select{padding:13px;border:1px solid #ccd6cf;border-radius:10px;font-size:15px;flex:1;min-width:180px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:15px}.card{background:white;border-radius:16px;padding:15px;box-shadow:0 3px 12px #173b2412}.pic{font-size:44px;background:#eef7ed;border-radius:12px;text-align:center;padding:18px}.card h3{font-size:16px;margin:12px 0 5px}.price{font-weight:bold;color:var(--green);margin-bottom:12px}.card button{width:100%;padding:10px;border:0;border-radius:10px;background:var(--green);color:#fff;font-weight:bold}
-section h2{color:var(--dark)}.info{background:white;border-radius:15px;padding:20px;margin-top:22px;line-height:1.7}
-#cartPanel{display:none;background:white;padding:20px;border-radius:15px;margin:20px 0;box-shadow:0 3px 12px #173b2412}.line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #eee}.total{font-size:20px;font-weight:bold;margin:18px 0}.small{font-size:13px;color:#66756c}footer{background:var(--dark);color:white;text-align:center;padding:25px;margin-top:25px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siri Kirana & General Store</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #e8f5e9;
+            --dark: #333333;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --gray: #777777;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+
+        .cart-btn {
+            background: var(--primary-light);
+            color: var(--primary);
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Banner Notification */
+        .banner {
+            background: #fff3e0;
+            color: #e65100;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            color: var(--gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            color: #555;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        /* Category Filter */
+        .categories-section {
+            padding: 2rem 5% 1rem 5%;
+        }
+
+        .categories-section h3, .products-section h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .category-tabs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .tab {
+            background: var(--white);
+            padding: 0.5rem 1.2rem;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .tab.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        /* Products Grid */
+        .products-section {
+            padding: 1rem 5% 3rem 5%;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .product-cat {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin: 0.2rem 0 0.5rem 0;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .add-btn {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0.6rem;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            background: var(--white);
+            padding: 3rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-card h4 {
+            color: var(--primary);
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 3rem 5%;
+            background: #f1f8e9;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .info-block h4 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .info-block p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1b5e20;
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Sliding Cart Sidebar */
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            background: var(--white);
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .cart-sidebar.open {
+            right: 0;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .close-cart {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .fulfillment-options {
+            margin: 1rem 0;
+        }
+
+        .fulfillment-options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<header><nav><div class="brand"><img class="logo" src="logo.jpg" alt="Siri Kirana logo"><div>SIRI <span>KIRANA</span> & GENERAL STORE</div></div><button class="cart" onclick="toggleCart()">🛒 Cart (<span id="count">0</span>)</button></nav></header>
-<section class="hero"><div class="wrap"><div>🛍️ Everyday Essentials, Close to You</div><h1>Your Trusted Local Store</h1><p>Groceries, snacks and household essentials in Balaji Nagar.</p><a class="btn" href="#products">Shop Now</a></div></section>
-<main class="wrap">
-<section id="products"><h2>Shop Products</h2><div class="tools"><input id="search" placeholder="Search products..." oninput="render()"><select id="category" onchange="render()"><option value="">All categories</option><option>Groceries</option><option>Snacks</option><option>Beverages</option><option>Household</option><option>Personal Care</option></select></div><div class="grid" id="productGrid"></div></section>
-<section id="cartPanel"><h2>Your Cart</h2><div id="cartItems"></div><div class="total">Total: ₹<span id="total">0</span></div><input id="customer" placeholder="Your name"><input id="address" placeholder="Delivery address" style="margin-top:10px"><select id="delivery" style="margin-top:10px"><option>Home Delivery</option><option>Store Pickup</option><option>Kerbside Pickup</option></select><button class="btn" style="margin-top:12px" onclick="whatsapp()">Place Order on WhatsApp</button><p class="small">Your order will be sent through WhatsApp. Store confirmation is required.</p></section>
-<section class="info"><h2>Visit Us</h2><p>📍 Shop No 3, Balaji Nagar, Hyderabad, Telangana 500078</p><p>⏰ Open daily: 6:00 AM – 10:30 PM</p><p>📞 099592 10450</p><p>🚚 Home delivery and pickup options available.</p><a class="btn" href="tel:+919959210450">Call Store</a></section>
-</main>
-<footer>SIRI KIRANA & GENERAL STORE<br><span class="small">Serving our local community with everyday essentials.</span></footer>
-<script>
-const products=[
-['Rice 5kg','Groceries',420,'🍚'],['Toor Dal 1kg','Groceries',160,'🫘'],['Cooking Oil 1L','Groceries',140,'🫗'],['Sugar 1kg','Groceries',48,'🍬'],['Biscuits','Snacks',30,'🍪'],['Chips','Snacks',20,'🥔'],['Tea 250g','Beverages',110,'🍵'],['Juice','Beverages',40,'🧃'],['Detergent','Household',120,'🧺'],['Bath Soap','Personal Care',45,'🧼']
-].map((p,i)=>({id:i,name:p[0],cat:p[1],price:p[2],icon:p[3]}));
-let cart={};
-function render(){let q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('category').value;let list=products.filter(p=>(!q||p.name.toLowerCase().includes(q))&&(!c||p.cat===c));document.getElementById('productGrid').innerHTML=list.map(p=><div class="card"><div class="pic">${p.icon}</div><h3>${p.name}</h3><div class="price">₹${p.price}</div><button onclick="add(${p.id})">Add to Cart</button></div>).join('')||'<p>No products found.</p>'}
-function add(id){cart[id]=(cart[id]||0)+1;update();alert('Added to cart');}
-function update(){let count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById('count').textContent=count;let total=0;document.getElementById('cartItems').innerHTML=Object.entries(cart).map(([id,qty])=>{let p=products[id];total+=p.price*qty;return <div class="line"><span>${p.name} × ${qty}</span><b>₹${p.price*qty}</b></div>}).join('')||'<p>Your cart is empty.</p>';document.getElementById('total').textContent=total;}
-function toggleCart(){let el=document.getElementById('cartPanel');el.style.display=el.style.display==='block'?'none':'block';update();el.scrollIntoView({behavior:'smooth'});}
-function whatsapp(){if(!Object.keys(cart).length)return alert('Please add products first.');let name=document.getElementById('customer').value.trim(),address=document.getElementById('address').value.trim();if(!name||!address)return alert('Please enter your name and address.');let msg='Hello SIRI KIRANA & GENERAL STORE,%0A%0AI would like to place an order.%0AName: '+encodeURIComponent(name)+'%0AAddress: '+encodeURIComponent(address)+'%0ADelivery: '+encodeURIComponent(document.getElementById('delivery').value)+'%0A%0AItems:%0A';let total=0;Object.entries(cart).forEach(([id,qty])=>{let p=products[id];total+=p.price*qty;msg+=encodeURIComponent(p.name+' x '+qty+' - ₹'+(p.price*qty))+'%0A';});msg+='%0ATotal: ₹'+total+'%0A%0APlease confirm availability and delivery details.';window.open('https://wa.me/919959210450?text='+msg,'_blank');}
-render();update();
-</script>
-</body>
-</html>
 
-Yes, Shiva! 🎉 I've redesigned your website with a modern, attractive grocery-store look.
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <span class="logo">SIRI KIRANA & GENERAL STORE</span>
+        </div>
+        <button class="cart-btn" onclick="toggleCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
 
-✨ Improvements included
-✅ Modern green + gold design
-✅ Attractive homepage banner
-✅ Category buttons with emojis
-✅ Improved product cards
-✅ Mobile-friendly layout
-✅ Better shopping cart with quantity controls
-✅ WhatsApp ordering
-✅ Cart saved in browser
-✅ Store information and call/WhatsApp buttons
-✅ Smooth animations and professional spacing
+    <!-- Top Alert Banner -->
+    <div class="banner">
+        🎉 Fresh essentials • Easy ordering • Local home delivery
+    </div>
 
-📥 Download Your Updated Website
-👉 Download Modern Siri Kirana Website
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>🛍 YOUR EVERYDAY SHOPPING PARTNER</h2>
+        <h1>Everything you need. Right around the corner.</h1>
+        <p>Shop groceries, snacks, beverages and household essentials from your trusted local store in Balaji Nagar.</p>
+        <div class="cta-buttons">
+            <a href="#products" class="btn btn-primary">Shop Now →</a>
+            <a href="tel:09959210450" class="btn btn-secondary">Call Us</a>
+        </div>
+    </section>
 
-📱 How to Add It to GitHub
-Open your GitHub repository.
-
-Open index.html.
-
-Tap ⋯ → Edit file.
-
-Select all existing code and delete it.
-
-Open the downloaded HTML file and copy the complete code.
-
-Paste it into GitHub.
-
-Tap Commit changes.
-
-Your GitHub Pages website will update after deployment.
-
-Next improvement: We can add real product photos, promotional banners, and a premium homepage similar to professional grocery websites. 🛒 
-
-
-
-
-siri-kirana-modern.html
-HTML
-
-
-
-
-Ad
-
-Yes
-
-Done, Shiva! 🎉 I've upgraded your website with:
-
-✨ Premium homepage design
-🌾 Attractive store highlights
-📲 WhatsApp ordering
-🚚 Delivery and pickup information
-🛒 Additional products
-📱 Mobile-friendly layout
-
-📥 Download Your Updated Website
-👉 Download Siri Kirana Premium Website
-
-Replace your existing index.html on GitHub with this file.
-
-Next step: We can add real product photos and a professional promotional banner for your store.
-
-
-
-
-siri-kirana-premium.html
-HTML
-
-
-No file chosen
-Library
-/
-siri-kirana-premium.html
-siri-…m.html
-
-
-
-
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siri Kirana & General Store</title>
-<meta name="description" content="Shop groceries, snacks and household essentials from Siri Kirana & General Store in Balaji Nagar, Hyderabad.">
-<style>
-:root{
-  --green:#126b48;--dark:#073b2a;--gold:#e4b33f;--cream:#fffaf0;
-  --ink:#17372b;--muted:#6d7d75;--bg:#f4f7f3;--white:#fff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-header{position:sticky;top:0;z-index:20;background:rgba(7,59,42,.97);color:white;box-shadow:0 3px 20px #0002}
-nav{max-width:1150px;margin:auto;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:10px;font-size:clamp(15px,3.8vw,23px);font-weight:900;line-height:1.1}
-.logo{width:53px;height:53px;object-fit:contain;background:#fff;border-radius:14px;padding:3px}
-.brand span{color:#ffd76b}
-.cart{border:0;background:var(--gold);color:#173224;font-weight:800;border-radius:30px;padding:12px 16px;cursor:pointer;white-space:nowrap}
-.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#073b2a,#168052);color:white}
-.hero:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#ffffff12;right:-100px;top:-100px}
-.hero-inner{max-width:1150px;margin:auto;padding:62px 18px 58px;position:relative;z-index:1}
-.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff40;border-radius:30px;padding:8px 13px;font-size:13px;font-weight:700}
-.hero h1{font-size:clamp(34px,7vw,64px);max-width:720px;line-height:1.04;margin:18px 0 14px}
+    <!-- Category Filter Section -->
+    <section class="categories-section">
+        <h3>Shop by Category</h3>
+        <div class="category-tabs">
+            <button class="tab active" onclick="filterCategory('All', this)">All</button>
+            <button class="tab" onclick="filterCategory('Groceries', this)">🌾 Groceries</button>
+            <button class="tab" onclick="filterCategory('Snacks', this)">🍪 Snacks</button>
+            <button class="tab" onclick="filterCategory('Beverages', this)">🥤 Beverages</button>
